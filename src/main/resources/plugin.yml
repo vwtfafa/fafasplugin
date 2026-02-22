@@ -1,0 +1,59 @@
+name: FafasPlugin
+version: '0.2.0'
+main: de.fafasplugin.FafasPlugin
+api-version: '1.21'
+authors: [fafa]
+description: Umfangreiches Freunde-Server Plugin mit QoL, Moderation, Economy, Events, Homes, TPA und mehr.
+
+commands:
+  fafa:
+    description: Plugin-Info
+  workbench:
+    description: Öffnet mobile Werkbank
+    aliases: [wb, craft]
+  ec:
+    description: Öffnet Enderchest
+    aliases: [enderchest]
+  anvil:
+    description: Öffnet Amboss
+  sethome:
+    description: Setzt ein Home
+  home:
+    description: Teleportiert zu Home
+  spawn:
+    description: Teleportiert zum Spawn
+  tpa:
+    description: Teleport-Anfrage senden
+  tpaccept:
+    description: Teleport-Anfrage annehmen
+  tpdeny:
+    description: Teleport-Anfrage ablehnen
+  mute:
+    description: Spieler muten
+  tempban:
+    description: Spieler temporär bannen
+  money:
+    description: Kontostand anzeigen
+    aliases: [balance]
+  pay:
+    description: Geld an Spieler senden
+  shop:
+    description: Shop öffnen
+  eventstart:
+    description: Event starten
+  party:
+    description: Party verwalten
+  servermenu:
+    description: GUI-Menü öffnen
+  dailyreward:
+    description: Tägliche Belohnung
+  minigame:
+    description: Minigame-Welt betreten
+
+permissions:
+  fafasplugin.mod:
+    default: op
+  fafasplugin.event:
+    default: op
+
+softdepend: [PlaceholderAPI, LuckPerms]
